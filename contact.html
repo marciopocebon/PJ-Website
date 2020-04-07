@@ -43,6 +43,69 @@
           color: #666;
         }
 
+
+
+        .social-container {
+            padding-left: 36%;
+            text-align: center;
+          }
+          .social-icons {
+            list-style: none;
+            margin: 1em;
+            
+          }
+          .social-icons li {
+            display: inline-block;
+            margin: 0.15em;
+            position: relative;
+            font-size: 1.2em;
+            
+          }
+          .social-icons i {
+            color: #fff;
+            position: absolute;
+            top: 21px;
+            left: 21px;
+            transition: all 265ms ease-out;
+          }
+          .social-icons a {
+            display: flex;
+          }
+          .social-icons a:before {
+            transform: scale(1);
+            -ms-transform: scale(1);
+            -webkit-transform: scale(1);
+            content: " ";
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: block;
+            background: linear-gradient(45deg, #ff003c, #c648c8);
+            transition: all 265ms ease-out;
+          }
+
+
+          
+          .social-icons a:hover:before {
+            transform: scale(0);
+            transition: all 265ms ease-in;
+          }
+          .social-icons a:hover i {
+            transform: scale(2.2);
+            -ms-transform: scale(2.2);
+            -webkit-transform: scale(2.2);
+            color: #ff003c;
+            background: -webkit-linear-gradient(45deg, #ff003c, #c648c8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 265ms ease-in;
+          }
+          
+ 
+
+
+
+
         @media only screen and (max-width: 600px) {
           #phone,#email {
             margin-top:10px;
@@ -51,6 +114,10 @@
         .phone, .email {
           padding: 7px;
         }
+        .social-container {
+            padding-left: 0px;
+            text-align: center;
+          }
       }
 
     </style>
@@ -97,6 +164,14 @@
                               <p id="phone" ><a href="tel:919495936026" target="_blank">Call</a></p>
                              </div>
 
+                             <div class="social-container">
+                              <ul class="social-icons">
+                                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              </ul>
+                             </div>
 
                          </div>
                      </div>
