@@ -11,6 +11,49 @@
     
     <title>PRANAV</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+              #phone,#email {
+            margin-top:20px;
+            width:300px;
+            -webkit-appearance:none;
+            -moz-appearance:none;
+            appearance:none;
+            color:#666;
+            font-family: Geneva,sans-serif;
+            text-align:center;
+            font-size:20px;
+            background-color: #fafafa;
+            outline:none;
+            border:none;
+            border-style:none;
+            font-weight:700;
+            cursor:pointer;
+            padding:20px;
+            border-radius:50px
+        }
+
+        .phone, .email {
+          padding: 10px;
+          padding-left: 50%;
+        }
+
+        a, a:hover {
+          text-decoration: none;
+          color: #666;
+        }
+
+        @media only screen and (max-width: 600px) {
+          #phone,#email {
+            margin-top:10px;
+            padding:20px;
+        }
+        .phone, .email {
+          padding: 7px;
+        }
+      }
+
+    </style>
     
   
   </head>
@@ -26,11 +69,11 @@
               <div class="sidebar-brand">
                 <a href="#">ART</a></div>
               </div>
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
            <li><a href="#followme">Follow me</a></li>
 
            </ul>
@@ -45,7 +88,15 @@
                  <div class="container">
                      <div class="row">
                          <div class="col-lg-8 col-lg-offset-2">
-                             <h1>ARTOGRAPHY BLAH BLAH BLAH ...</h1>
+                             <h1>CONTACT ME</h1>
+
+                             <div class="email">
+                              <p id="email" ><a href="mailto:pranav.pj27@email.com" target="_blank">Send a Mail</a></p> 
+                             </div>
+                             <div class="phone">
+                              <p id="phone" ><a href="tel:919495936026" target="_blank">Call</a></p>
+                             </div>
+
 
                          </div>
                      </div>
@@ -64,9 +115,32 @@
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
   <script src="script.js"></script> 
+  <script>
+    (function() {
+            var $phone = '+91 9495936026',
+                  $email = 'pranav.pj27@email.com',
+                    phone = $('#phone'),
+                      email = $('#email');
+          
+            $(phone).click(function() {
+                var text = $(this).text() == $phone ?
+                    'Click to view number' : $phone;
+                $(this).text(text).toggleClass("active");
+            });
+          
+            $(email).click(function() {
+                var text = $(this).text() == $email ? 
+                    'Click to view email' : $email;
+                $(this).text(text).toggleClass("active");
+            });
+          
+        })();
+          
+
+  </script>
 
 
 
 
-
+  
 </html>

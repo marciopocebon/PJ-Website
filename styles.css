@@ -148,6 +148,7 @@ padding: 0;
 .sidebar-nav li.open a:hover,
 .sidebar-nav li.open a:active,
 .sidebar-nav li.open a:focus{
+  
   color: #fff;
   text-decoration: none;
   background-color: transparent;
