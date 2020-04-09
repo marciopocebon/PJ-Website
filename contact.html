@@ -80,17 +80,19 @@
             height: 60px;
             border-radius: 100%;
             display: block;
-            background: linear-gradient(45deg, #ff003c, #c648c8);
             transition: all 265ms ease-out;
+            background: linear-gradient(45deg,#d8085f, #00b3b3); 
           }
 
-
           
+         
+
+
           .social-icons a:hover:before {
             transform: scale(0);
             transition: all 265ms ease-in;
           }
-          .social-icons a:hover i {
+          .social-icons a:hover i  {
             transform: scale(2.2);
             -ms-transform: scale(2.2);
             -webkit-transform: scale(2.2);
@@ -115,9 +117,14 @@
           padding: 7px;
         }
         .social-container {
-            padding-left: 0px;
+            padding: 0%;
             text-align: center;
           }
+
+         .social-icons {
+           padding-left: 0px;
+         } 
+          
       }
 
     </style>
@@ -166,10 +173,10 @@
 
                              <div class="social-container">
                               <ul class="social-icons">
-                                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                  <li><a href="#" id="insta"><i class="fa fa-instagram"></i></a></li>
+                                  <li><a href="#" id="twitter"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#" id="youtube"><i class="fa fa-youtube"></i></a></li>
+                                  <li><a href="#" id="fb"><i class="fa fa-facebook"></i></a></li>
                               </ul>
                              </div>
 
